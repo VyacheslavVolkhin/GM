@@ -1,0 +1,160 @@
+:root {
+	--clr-base: #555;
+	--clr-att: #19193d;
+	--clr-att-hover: #1d2029;
+	--clr-light: #e4e4e;
+    --clr-title: #202020;
+    
+	--min: 320px;
+	--max: 1500px;
+    
+    --paddingContainer: 15px;
+
+	font-size: 10px;
+}
+.sl-wrap~.sl-wrap {
+	display: none;
+}
+.elm-hidden {
+	display: none;
+}
+/* ----------------------------------- *\
+			main styles
+\* ----------------------------------- */
+body {
+	color: var(--clr-base);
+	background: #fff;
+    font-size: 15px;
+    line-height: (24/15);
+    font-weight: 400;
+}
+p, ul, ol, table, blockquote, .bq-text {
+	position: relative;
+    margin-bottom: (24/15em);
+	img {
+		max-width: 100%;
+	}
+	&:last-child {
+		margin-bottom: 0 !important;
+	}
+}
+li {
+	position: relative;
+    padding-left: 24px;
+    &:before {
+        content: "\2014";
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: left;
+        width: 24px;
+    }
+}
+.menu, .list {
+    margin: 0;
+    padding: 0;
+    li {
+        margin: 0;
+        padding: 0;
+        &:before {
+            display: none;
+        }
+    }
+}
+a {
+    text-decoration: none;
+    color: var(--clr-att);
+    &:hover {
+        text-decoration: none;
+        color: var(--clr-att-hover);
+    }
+}
+a.link-main, .link-main {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    &:hover {
+    }
+}
+.link-phone {
+    white-space: nowrap;
+}
+h1, .h1-title,
+h2, .h2-title,
+h3, .h3-title,
+h4, .h4-title,
+h5, .h5-title,
+h6, .h6-title {
+	display: block;
+	position: relative;
+    font-weight: bold;
+    margin: 1em 0;
+    color: var(--clr-title);
+    line-height: 1.15;
+    &:first-child {
+        margin-top: 0;
+    }
+}
+.h1-title, h1 {
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+.h2-title, h2 {
+    font-size: 25px;
+    margin-bottom: (30/25em);
+}
+.h3-title, h3 {
+    font-size: 19px;
+}
+.text-att, .title-att {
+    color: var(--clr-att);
+}
+.text-light, .title-light {
+    color: var(--clr-light);
+}
+.text-center, .title-center {
+    text-align: center;
+}
+hr, .hr {
+    clear: both;
+    width: 100vw;
+    height: 1px;
+    border: none;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+    background-color: #f0f0f0;
+    margin-bottom: 6rem;
+}
+@media (max-width: 1399px) {
+    :root {
+        font-size: 9.5px;
+    }
+}
+@media (max-width: 1199px) {
+    :root {
+        font-size: 9px;
+    }
+}
+@media (max-width: 1023px) {
+    :root {
+        font-size: 8px;
+    }
+}
+@media (max-width: 767px) {
+    :root {
+        font-size: 7px;
+    }
+}
+@media (min-width: 1024px) {
+    :root {
+        --paddingContainer: 30px;
+    }
+    .h1-title, h1 {
+        font-size: 3.2rem;
+    }
+}
+@media (min-width: 1400px) {
+    :root {
+        --paddingContainer: 45px;
+    }
+}

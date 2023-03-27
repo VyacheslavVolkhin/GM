@@ -1,0 +1,552 @@
+/* ----------------------------------- *\
+			inputs elements styles
+\* ----------------------------------- */
+.form-input[placeholder] {
+    text-overflow: ellipsis;
+}
+.form-input {
+    background: #f7f7f7;
+    border: 1px solid #eeeeee;
+    height: 37px;
+    padding: 0 10px;
+    font-size: 13px;
+    color: var(--clr-base);
+}
+textarea.form-input {
+    line-height: 20px;
+    padding-top: 10px;
+    height: 200px;
+}
+select.form-input {
+    display: block;
+    cursor: pointer;
+    width: 100%;
+    padding-right: 36px;
+    padding-left: 9px;
+    border: 1px solid #eee;
+    height: 32px;
+    background-image: url(../img/icons/arrow-select.svg);
+    background-size: 14px auto;
+    background-position: right 10px center;
+    background-color: #f7f7f7;
+    border-radius: 2px;
+    background-repeat: no-repeat;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -webkit-appearance: none;
+    appearance: none!important;
+    line-height: 1em;
+    text-indent: 0.01px;
+    text-overflow: '';
+    outline: none;
+    font-size: 13px;
+    color: #333;
+    &.form-input-clear {
+        height: auto;
+        border: none;
+        min-height: 0;
+        border-radius: 0;
+        box-shadow: none;
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 1em;
+        line-height: inherit;
+        padding: 0 16px 0 0;
+        color: inherit;
+        font-weight: bold;
+        background-image: url(../img/icons/arrow-select.png);
+        background-size: 8px auto;
+        background-repeat: no-repeat;
+        background-position: right center;
+    }
+}
+select::-ms-expand {
+    display: none;
+}
+//   <select class="form-input form-input-line" required>
+//       <option value="" disabled selected hidden>Выбрать</option>
+//       <option>Пункт списка</option>
+//   </select>
+select.form-input:required:invalid {
+    color: #ADADAD;
+}
+.btn {
+    background-color: #19193d;
+    border: 1px solid #19193d;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 20px;
+    height: 44px;
+    &:hover {
+        background-color: #222253;
+        border-color: #222253;
+        color: #fff;
+    }
+    &.button-att {
+        background-color: #4fad00;
+        border-color: #4fad00;
+        &:hover {
+            background-color: #4fad00+#111;
+            border-color: #4fad00+#111;
+        }
+    }
+    &.button-light {
+        background-color: rgba(229,229,229,0.9);
+        border: none;
+        color: var(--clr-title);
+        &:hover {
+            background-color: rgba(229,229,229,1);
+            color: var(--clr-title);
+        }
+    }
+    &.button-tab {
+        border: none;
+        padding: 0;
+        line-height: 27px;
+        height: auto;
+        padding-bottom: 5px;
+        font-size: 12px;
+        font-weight: bold;
+        color: var(--clr-title);
+        background-color: transparent;
+        &:before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background-color: var(--clr-title);
+            opacity: 0;
+            transition: opacity ease 0.2s;
+        }
+        &.active, &:hover {
+            color: var(--clr-title);
+            background-color: transparent;
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+    &.button-border-icon {
+        border: 1px solid #f0f0f0;
+        padding: 0;
+        height: 44px;
+        font-size: 15px;
+        color: #333;
+        background-color: transparent;
+        &:hover {
+            background-color: #f5f5f5;
+            .button-ico {
+                border-color: #fff !important;
+            }
+        }
+        .button-title {
+            padding: 0 20px;
+            flex-shrink: 0;
+        }
+        .button-ico {
+            margin: 0;
+            width: 42px;
+            height: 42px;
+            flex-shrink: 0;
+            &:first-child {
+                border-right: 1px solid #f0f0f0;
+            }
+            &:last-child {
+                border-left: 1px solid #f0f0f0;
+            }
+        }
+    }
+    &.button-border {
+        &:not(:hover) {
+            background-color: transparent;
+            color: #231f20;
+        }
+        &:hover, &.active {
+            background-color: var(--clr-att);
+            border-color: var(--clr-att);
+            .button-ico, .btn-action-ico {
+                filter: brightness(0) invert(1);
+            }
+        }
+    }
+    .button-ico, .btn-action-ico {
+        width: 24px;
+        height: 24px;
+        margin: 0 10px;
+        transition: all ease 0.2s;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+    .button-ico {
+        .btn-action-ico {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+}
+.btn-action-ico {
+    min-width: 0;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    width: 40px;height: 40px;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    transition: all ease 0.2s;
+    flex-shrink: 0;
+    &:not(.btn) {
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    &.btn {
+        min-width: 0;
+        min-height: 0;
+        padding: 0;
+        display: block;
+    }
+    &:before, &:after, [class*="icon-"], img, svg {
+        display: block;
+        position: absolute;
+        top: 0;bottom: 0;left: 0;right: 0;
+        margin: auto;
+        max-width: 100%;
+        max-height: 100%;
+        transition: all ease 0.2s;
+    }
+    img, svg {
+        max-width: 24px;
+        max-height: 24px;
+    }
+    &:before, &:after {
+        content: "";
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 24px auto;
+    }
+    &:hover {
+        text-decoration: none;
+        &:not(.btn) {
+            background: none;
+            box-shadow: none;
+        }
+    }
+    &.ico-close {
+        &:before, &:after {
+            width: 12px;
+            height: 2px;
+            background-color: var(--clr-base);
+            top: 50%;
+            left: 50%;
+            bottom: auto;
+            right: auto;
+            margin: -1px 0 0 -6px;
+            .t-rotate(45deg);
+        }
+        &:before {
+            .t-rotate(-45deg);
+        }
+    }
+    &.ico-print {
+        &:before {
+            background-image: url(../img/icons/print.svg);
+            background-size: 16px auto;
+        }
+    }
+    &.ico-arrow {
+        z-index: 20;
+        cursor: pointer;
+        border-radius: 50%;
+        background-color: #fff;
+        width: 42px;
+        height: 42px;
+        &:before {
+            background-image: url(../img/icons/arrows.png);
+            background-position: -19px -95px;
+            background-size: auto;
+        }
+        &:hover {
+            background-color: var(--clr-att);
+            &:before {
+                filter: brightness(0) invert(1);
+            }
+        }
+        &.ico-arrow-small {
+            background-color: transparent;
+            border: none;
+            border-radius: 0;
+            &:before {
+                opacity: 0.6;
+                filter: none;
+            }
+            &:hover {
+                background-color: transparent;
+                &:before {
+                    opacity: 1;
+                    filter: none;
+                }
+            }
+        }
+        &.ico-arrow-border {
+            width: 36px;
+            height: 36px;
+            border: 1px solid #e5e5e5;
+            background-color: transparent;
+            border-radius: 0;
+            &:hover {
+                border-color: var(--clr-att);
+                background-color: var(--clr-att);
+            }
+            &:before {
+                background-position: -23px -99px;
+            }
+        }
+    }
+    &.ico-arrow-prev {
+        &:before {
+            transform: scaleX(-1);
+        }
+    }
+    &.ico-cart {
+        &:before {
+            background-image: url(../img/icons/cart.svg);
+        }
+    }
+    &.ico-menu {
+        &:before {
+            background-image: url(../img/icons/menu.svg);
+        }
+    }
+    &.ico-search {
+        &:before {
+            background-image: url(../img/icons/search.svg);
+        }
+    }
+    &.ico-user {
+        &:before {
+            background-image: url(../img/icons/user.svg);
+        }
+    }
+    &.ico-phone {
+        &:before {
+            background-image: url(../img/icons/phone.svg);
+        }
+    }
+    &.ico-image-types {
+        width: 20px;
+        height: 18px;
+        &:before, &:after {
+            background-image: url(../img/icons/icon_types.svg);
+            background-size: auto;
+            background-position: 0 0;
+        }
+        &:after {
+            display: none;
+        }
+        &.ico-allseason {
+            &:before {
+                background-position: center -61px;
+            }
+        }
+        &.ico-wthspikes {
+            &:before {
+                background-position: -3px -201px;
+            }
+        }
+        &.ico-winter {
+            &:before {
+                background-position: center -1px;
+            }
+        }
+        &.ico-summer {
+            &:before {
+                background-position: center -21px;
+            }
+        }
+        &.ico-ship {
+            &:before {
+                background-position: center -41px;
+            }
+        }
+        &.ico-cord {
+            &:before {
+                background-position: center -160px;
+            }
+        }
+    }
+    &.ico-image-ai {
+        &:before, &:after {
+            background-image: url(../img/icons/ai.svg);
+            background-size: auto;
+            background-position: 0 0;
+        }
+        &:after {
+            display: none;
+        }
+        &.ico-stock {
+            width: 14px;
+            height: 14px;
+            &:before {
+                background-position: -111px -50px;
+            }
+        }
+        &.ico-arrow-go {
+            width: 14px;
+            height: 12px;
+            &:before {
+                background-position: -33px -49px;
+            }
+        }
+    }
+    &.ico-image-tires {
+        &:before, &:after {
+            background-image: url(../img/icons/tires2.svg);
+            background-size: auto;
+            background-position: 0 0;
+        }
+        &:after {
+            display: none;
+        }
+        &.ico-share {
+            width: 17px;
+            height: 18px;
+            &:before {
+                background-position: -162px -141px;
+            }
+        }
+    }
+    &.ico-image-sort {
+        &:before, &:after {
+            background-image: url(../img/icons/sort_icon.svg);
+            background-size: auto;
+            background-position: 0 0;
+        }
+        &:after {
+            display: none;
+        }
+        &.ico-sort-star {
+            &:before {
+                width: 15px;
+                height: 13px;
+                background-position: -2px -77px;
+            }
+        }
+        &.ico-sort-letter {
+            &:before {
+                width: 15px;
+                height: 13px;
+                background-position: -20px -95px;
+            }
+        }
+        &.ico-sort-price {
+            &:before {
+                width: 15px;
+                height: 13px;
+                background-position: -2px -114px;
+            }
+        }
+        &.ico-view-tiles {
+            &:before {
+                background-position: -1px -23px;
+                width: 13px;
+                height: 13px;
+            }
+        }
+        &.ico-view-rows {
+            &:before {
+                background-position: -19px -41px;
+                width: 13px;
+                height: 13px;
+            }
+        }
+        &.ico-view-compact {
+            &:before {
+                background-position: -37px -41px;
+                width: 13px;
+                height: 13px;
+            }
+        }
+    }
+    &.ico-image-wish {
+        &:before, &:after {
+            background-image: url(../img/icons/icons_wish.svg);
+            background-size: auto;
+            background-position: 0 0;
+        }
+        &:after {
+            display: none;
+        }
+        &.ico-stock {
+            width: 15px;
+            height: 15px;
+            &:before {
+                background-position: -15px 0;
+            }
+        }
+        &.ico-check  {
+            width: 11px;
+            height: 13px;
+            &:before {
+                background-position: -49px -5px;
+            }
+        }
+    }
+    &[data-count] {
+        overflow: visible;
+        &:after {
+            bottom: 50%;
+            left: 50%;
+            position: absolute;
+            margin-left: 4px;
+            margin-bottom: -3px;
+            box-shadow: 0px 0px 0px 2px #fff;
+        }
+    }
+}
+[data-count] {
+    &:after {
+        content: attr(data-count);
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+        flex-shrink: 0;
+        background-color: #000;
+        top: auto;
+        bottom: auto;
+        left: auto;
+        right: auto;
+        height: 20px;
+        line-height: 20px;
+        text-align: center;
+        min-width: 20px;
+        border-radius: 10px;
+        font-size: 11px;
+        font-weight: 400;
+        color: #fff;
+        z-index: 2;
+    }
+}
+@media (min-width: 480px) {
+    .btn {
+        &.button-tab {
+            font-size: 16px;
+        }
+    }
+}
