@@ -40,8 +40,12 @@
                     <div class="action-wrap action-search js-popup-wrap popup-search-wrap">
                         <a href="" class="btn-action-ico ico-search btn-popup-open js-btn-toggle"></a>
                         <div class="popup-content-block js-popup-block">
-                            333
+                            <form action="/" class="frm-main-search">
+                                <input type="text" class="form-input" placeholder="Поиск">
+                                <button type="submit" class="btn">Найти</button>
+                            </form>
                         </div>
+                        <div class="elm-overlay"></div>
                     </div>
                     <div class="action-wrap action-user">
                         <a href="" class="btn-action-ico ico-user"></a>
@@ -56,14 +60,204 @@
         <!--nav-->
         <div class="nav js-popup-wrap">
             <a href="" class="btn-action-ico ico-menu btn-popup-open js-btn-toggle"></a>
-            <div class="popup-content-block inner-wrap">
+            <div class="popup-content-block inner-wrap js-popup-block">
                 <div class="menu-wrap">
                     <ul class="menu">
                         <li class="submenu">
                             <a href="" class="btn-menu">Шины</a>
+                            <ul class="menu-brands">
+                                <li><a href="">Amtel</a></li>
+                                <li><a href="">Bridgestone</a></li>
+                                <li><a href="">Continental</a></li>
+                                <li><a href="">Cordiant</a></li>
+                                <li><a href="">Goodyear</a></li>
+                                <li><a href="">Hankook</a></li>
+                                <li><a href="">Matador</a></li>
+                                <li><a href="">Maxxis</a></li>
+                                <li><a href="">Michelin</a></li>
+                                <li><a href="">Nokian</a></li>
+                                <li><a href="">Pirelli</a></li>
+                                <li><a href="">Yokohama</a></li>
+                            </ul>
+                            <div class="submenu-outer-wrap">
+                                <div class="submenu-menu-wrap">
+                                    <ul class="submenu-menu">
+                                        <li>
+                                            <a href="">Подбор шин</a>
+                                            <ul>
+                                                <li><a href="">Каталог шин</a></li>
+                                                <li><a href="">Подбор по параметрам</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Сезон</a>
+                                            <ul>
+                                                <li><a href="">Всесезонные шины</a></li>
+                                                <li><a href="">Зимние шины</a></li>
+                                                <li><a href="">Летние шины</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Популярные типоразмеры</a>
+                                            <ul>
+                                                <li><a href="">175/65 R14</a></li>
+                                                <li><a href="">185/65 R14</a></li>
+                                                <li><a href="">185/65 R15</a></li>
+                                                <li><a href="">195/60 R16</a></li>
+                                                <li><a href="">195/65 R15</a></li>
+                                                <li><a href="">205/55 R16</a></li>
+                                                <li><a href="">215/55 R16</a></li>
+                                                <li><a href="">215/60 R17</a></li>
+                                                <li><a href="">225/60 R18</a></li>
+                                                <li><a href="">235/55 R17</a></li>
+                                                <li><a href="">235/55 R18</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="submenu-brands-wrap">
+                                    <div class="submenu-title-wrap">
+                                        <div class="submenu-title">Популярные производители</div>
+                                        <div class="submrnu-link"><a href="">Все производители</a></div>
+                                    </div>
+                                    <div class="submenu-items-wrap">
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo01.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo02.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo03.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo04.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo05.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo06.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo01.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo02.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo03.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo04.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo05.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo06.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li class="submenu">
                             <a href="" class="btn-menu">Диски</a>
+                            <ul class="menu-brands">
+                                <li><a href="">Amtel</a></li>
+                                <li><a href="">Bridgestone</a></li>
+                                <li><a href="">Continental</a></li>
+                                <li><a href="">Cordiant</a></li>
+                                <li><a href="">Goodyear</a></li>
+                                <li><a href="">Hankook</a></li>
+                                <li><a href="">Matador</a></li>
+                                <li><a href="">Maxxis</a></li>
+                                <li><a href="">Michelin</a></li>
+                                <li><a href="">Nokian</a></li>
+                                <li><a href="">Pirelli</a></li>
+                                <li><a href="">Yokohama</a></li>
+                            </ul>
+                            <div class="submenu-outer-wrap">
+                                <div class="submenu-menu-wrap">
+                                    <ul class="submenu-menu">
+                                        <li>
+                                            <a href="">Подбор шин</a>
+                                            <ul>
+                                                <li><a href="">Каталог шин</a></li>
+                                                <li><a href="">Подбор по параметрам</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Сезон</a>
+                                            <ul>
+                                                <li><a href="">Всесезонные шины</a></li>
+                                                <li><a href="">Зимние шины</a></li>
+                                                <li><a href="">Летние шины</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a href="">Популярные типоразмеры</a>
+                                            <ul>
+                                                <li><a href="">175/65 R14</a></li>
+                                                <li><a href="">185/65 R14</a></li>
+                                                <li><a href="">185/65 R15</a></li>
+                                                <li><a href="">195/60 R16</a></li>
+                                                <li><a href="">195/65 R15</a></li>
+                                                <li><a href="">205/55 R16</a></li>
+                                                <li><a href="">215/55 R16</a></li>
+                                                <li><a href="">215/60 R17</a></li>
+                                                <li><a href="">225/60 R18</a></li>
+                                                <li><a href="">235/55 R17</a></li>
+                                                <li><a href="">235/55 R18</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="submenu-brands-wrap">
+                                    <div class="submenu-title-wrap">
+                                        <div class="submenu-title">Популярные производители</div>
+                                        <div class="submrnu-link"><a href="">Все производители</a></div>
+                                    </div>
+                                    <div class="submenu-items-wrap">
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo01.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo02.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo03.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo04.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo05.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo06.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo01.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo02.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo03.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo04.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo05.png" alt="">
+                                        </a>
+                                        <a href="" class="submenu-item">
+                                            <img src="./img/logo06.png" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </li>
                         <li>
                             <a href="" class="btn-menu">Шиномонтаж</a>
@@ -137,6 +331,7 @@
                     </ul>
                 </div>
             </div>
+            <div class="elm-overlay"></div>
         </div><!--/nav-->
 
         <!-- page -->

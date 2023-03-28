@@ -363,8 +363,31 @@ select.form-input:required:invalid {
         }
     }
     &.ico-menu {
+        transition: none !important;
         &:before {
             background-image: url(../img/icons/menu.svg);
+        }
+        &:before, &:after {
+            transition: none !important;
+        }
+        &.active {
+            &:after, &:before {
+                content: "";
+                display: block;
+                width: 22px;
+                height: 2px;
+                background: #222253;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                bottom: auto;
+                right: auto;
+                margin: -1px 0 0 -11px;
+                .t-rotate(45deg);
+            }
+            &:before {
+                .t-rotate(-45deg);
+            }
         }
     }
     &.ico-search {
