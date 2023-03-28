@@ -222,9 +222,17 @@ $(document).ready(function(){
         return false;
     })
     
-    //item catalog cart
+    //add cart
     $('.item-tile-catalog .tile-add-wrap .btn').on('click', function() {
         $(this).parents('.item-tile-catalog').addClass('in-cart');
+        return false;
+    })
+    $('.card-box .add-wrap .btn').on('click', function() {
+        $(this).parents('.actions-wrap').addClass('in-cart');
+        return false;
+    })
+    $('.tbl-actions-wrap .add-wrap .btn').on('click', function() {
+        $(this).parents('.tbl-actions-wrap').addClass('in-cart');
         return false;
     })
 

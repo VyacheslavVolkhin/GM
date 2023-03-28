@@ -100,6 +100,39 @@ select.form-input:required:invalid {
             color: var(--clr-title);
         }
     }
+    &.button-toggle {
+        border: 1px solid #f0f0f0;
+        position: relative;
+        height: 60px;
+        background-color: transparent;
+        padding: 0 40px 0 24px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #19193d;
+        &:hover {
+            background-color: #f0f0f0;
+            color: #19193d;
+        }
+        &.active {
+            &:before {
+                .t-rotate(180deg);
+            }
+        }
+        &:before {
+            content: "";
+            display: block;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            background: url(../img/icons/arrows.png) no-repeat;
+            background-size: 46px auto;
+            background-position: 0 -264px;
+            top: 50%;
+            right: 12px;
+            margin-top: -8px;
+            transition: all ease 0.2s;
+        }
+    }
     &.button-tab {
         border: none;
         padding: 0;
@@ -391,6 +424,48 @@ select.form-input:required:invalid {
             }
         }
     }
+    &.ico-image-types-large {
+        width: 26px;
+        height: 22px;
+        &:before, &:after {
+            background-image: url(../img/icons/icon_types_large.svg);
+            background-size: auto;
+            background-position: 0 0;
+        }
+        &:after {
+            display: none;
+        }
+        &.ico-allseason {
+            &:before {
+                background-position: center -80px;
+            }
+        }
+        &.ico-wthspikes {
+            &:before {
+                background-position: -3px -106px;
+            }
+        }
+        &.ico-winter {
+            &:before {
+                background-position: center 0px;
+            }
+        }
+        &.ico-summer {
+            &:before {
+                background-position: center -28px;
+            }
+        }
+        &.ico-ship {
+            &:before {
+                background-position: center -54px;
+            }
+        }
+        &.ico-cord {
+            &:before {
+                background-position: center -132px;
+            }
+        }
+    }
     &.ico-image-ai {
         &:before, &:after {
             background-image: url(../img/icons/ai.svg);
@@ -429,6 +504,13 @@ select.form-input:required:invalid {
             height: 18px;
             &:before {
                 background-position: -162px -141px;
+            }
+        }
+        &.ico-zoom {
+            width: 21px;
+            height: 22px;
+            &:before {
+                background-position: -250px -171px;
             }
         }
     }

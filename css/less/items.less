@@ -1,6 +1,66 @@
 /* ----------------------------------- *\
 			items styles
 \* ----------------------------------- */
+.item-tile-logo-info {
+    border: 1px solid #f7f7f7;
+    position: relative;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--clr-base);
+    .tile-photo {
+        width: 100%;
+        max-width: 162px;
+        border-bottom: 1px solid #f7f7f7;
+        border-right: 1px solid #f7f7f7;
+        height: 84px;
+        img {
+            max-width: 80%;
+            max-height: 80%;
+        }
+        &.photo-contain {
+            img {
+                max-width: 80%;
+                max-height: 80%;
+            }
+        }
+    }
+    .tile-menu {
+        display: block;
+        padding: 30px;
+    }
+    li {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        a {
+            display: block;
+            position: relative;
+            padding-left: 20px;
+            line-height: 18px;
+            &:before {
+                content: "";
+                display: block;
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                background: url(../img/icons/arrows.png) no-repeat;
+                background-size: 46px auto;
+                background-position: 0 -264px;
+                top: 9px;
+                left: 0;
+                margin-top: -8px;
+                transition: all ease 0.2s;
+                .t-rotate(-90deg);
+            }
+        }
+    }
+    a {
+        &:not(:hover) {
+            color: inherit;
+        }
+    }
+}
 .item-tile-cart {
     display: flex;
     flex-direction: column;
@@ -480,6 +540,34 @@
             height: auto;
         }
     }
+    &.photo-zoom {
+        &:hover {
+            &:after {
+                opacity: 1;
+            }
+        }
+        &:after {
+            content: "";
+            display: block;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            z-index: 3;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            background-color: #19193d;
+            background-image: url(../img/icons/tires2.svg);
+            background-size: auto;
+            background-repeat: no-repeat;
+            background-position: -241px -163px;
+            opacity: 0;
+            transition: all ease 0.2s;
+        }
+    }
 }
 .elm-price, .tile-price {
     white-space: nowrap;
@@ -601,6 +689,13 @@
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    &.st-large {
+        height: 24px;
+        line-height: 24px;
+        padding: 0 10px;
+        font-size: 13px;
+        letter-spacing: 0.5px;
+    }
 }
 .elm-stock, .tile-stock {
     display: flex;
@@ -608,6 +703,19 @@
     .btn-action-ico {
         margin: -2px 5px 0 0;
         flex-shrink: 0;
+    }
+    &.st-text {
+        display: block;
+        color: #37ac09;
+        &.st-out {
+            color: red;
+        }
+        &.st-white {
+            color: orange;
+        }
+    }
+    &.st-out {
+        
     }
 }
 .elm-info {
@@ -639,6 +747,37 @@
             background-color: var(--clr-att);
             color: #fff;
         }
+    }
+}
+.elm-row, .tile-row {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 1em;
+        left: 0;
+        right: 0;
+        height: 1px;
+        border-top: 1px dotted #ccc;
+    }
+    .row-title, .row-value {
+        display: block;
+        position: relative;
+        background-color: #fff;
+        z-index: 2;
+        max-width: 50%;
+        padding-right: 5px;
+    }
+    .row-value {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .btn-action-ico {
+        display: inline-block;
+        vertical-align: middle;
     }
 }
 @media (min-width: 480px) {

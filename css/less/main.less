@@ -93,6 +93,11 @@ h6, .h6-title {
     &:first-child {
         margin-top: 0;
     }
+    .btn-action-ico {
+        display: block;
+        vertical-align: middle;
+        margin-top: 5px;
+    }
 }
 .h1-title, h1 {
     font-size: 20px;
@@ -145,12 +150,38 @@ hr, .hr {
         font-size: 7px;
     }
 }
+@media (min-width: 768px) {
+    h1, .h1-title,
+    h2, .h2-title,
+    h3, .h3-title,
+    h4, .h4-title,
+    h5, .h5-title,
+    h6, .h6-title {
+        .btn-action-ico {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: -8px;
+        }
+    }
+}
 @media (min-width: 1024px) {
     :root {
         --paddingContainer: 30px;
     }
     .h1-title, h1 {
         font-size: 3.2rem;
+    }
+}
+@media (min-width: 1200px) {
+    h1, .h1-title,
+    h2, .h2-title,
+    h3, .h3-title,
+    h4, .h4-title,
+    h5, .h5-title,
+    h6, .h6-title {
+        .btn-action-ico {
+            margin-top: -10px;
+        }
     }
 }
 @media (min-width: 1400px) {
