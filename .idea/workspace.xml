@@ -5,50 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="33c1e436-f245-4d66-b94e-65d1b59486dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gruntfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/Gruntfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/inner07.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/inner07.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_html/ui.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/ui.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/scripts.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/scripts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-disk.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-disk.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-tires.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalog-tires.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/jquery.fancybox.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/common.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/common.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_html/inner04.html" beforeDir="false" afterPath="$PROJECT_DIR$/_html/inner04.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/content.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/content.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/forms.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/forms.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/inputs.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/inputs.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/items.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/items.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/main.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/main.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/mixin.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/mixin.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/less/structura.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/structura.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/less/style.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/less/style.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/reset.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inner01.html" beforeDir="false" afterPath="$PROJECT_DIR$/inner01.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inner02.html" beforeDir="false" afterPath="$PROJECT_DIR$/inner02.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inner03.html" beforeDir="false" afterPath="$PROJECT_DIR$/inner03.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inner04.html" beforeDir="false" afterPath="$PROJECT_DIR$/inner04.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inner05.html" beforeDir="false" afterPath="$PROJECT_DIR$/inner05.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inner06.html" beforeDir="false" afterPath="$PROJECT_DIR$/inner06.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inner07.html" beforeDir="false" afterPath="$PROJECT_DIR$/inner07.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inner08.html" beforeDir="false" afterPath="$PROJECT_DIR$/inner08.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inner09.html" beforeDir="false" afterPath="$PROJECT_DIR$/inner09.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inner10.html" beforeDir="false" afterPath="$PROJECT_DIR$/inner10.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/inner11.html" beforeDir="false" afterPath="$PROJECT_DIR$/inner11.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery.fancybox.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/scripts.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/scripts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui.html" beforeDir="false" afterPath="$PROJECT_DIR$/ui.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,8 +55,8 @@
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "TEXT",
       "CSS",
+      "TEXT",
       "SVG"
     ]
   }
@@ -135,7 +99,7 @@
       <workItem from="1676893336796" duration="790000" />
       <workItem from="1676945181577" duration="42000" />
       <workItem from="1679382163067" duration="29858000" />
-      <workItem from="1679889311214" duration="36829000" />
+      <workItem from="1679889311214" duration="40502000" />
     </task>
     <servers />
   </component>

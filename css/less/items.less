@@ -349,7 +349,7 @@
             display: flex;
         }
     }
-    .tile-stickers-wrap {
+    .tile-stickers-wrap, .tile-logo-wrap {
         display: flex;
         flex-wrap: wrap;
         position: absolute;
@@ -360,6 +360,29 @@
         gap: 6px;
         z-index: 2;
         pointer-events: none;
+        &~.tile-stickers-wrap, &~.tile-logo-wrap {
+            display: none;
+        }
+    }
+    .tile-logo-wrap {
+        padding: 15px;
+    }
+    .tile-logo {
+        display: block;
+        position: relative;
+        width: 50%;
+        height: 20px;
+        margin: 0 0 0 auto;
+        img, svg {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+        }
     }
     .tile-photo-wrap {
         margin-bottom: 14px;

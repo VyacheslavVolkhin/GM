@@ -1153,7 +1153,7 @@ body {
   }
   .nav {
     display: block;
-    background-color: #19193d;
+    background-color: #0e0e0e;
   }
   .nav .btn-popup-open {
     display: none;
@@ -1181,7 +1181,7 @@ body {
         flex-grow: 1;
   }
   .nav .menu-wrap .menu > li:hover .btn-menu {
-    background-color: #222253;
+    background-color: #3e3e3e;
     color: #fff;
   }
   .nav .menu-wrap .btn-menu {
@@ -1569,7 +1569,8 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-.item-tile-catalog .tile-stickers-wrap {
+.item-tile-catalog .tile-stickers-wrap,
+.item-tile-catalog .tile-logo-wrap {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
@@ -1582,6 +1583,33 @@ body {
   gap: 6px;
   z-index: 2;
   pointer-events: none;
+}
+.item-tile-catalog .tile-stickers-wrap ~ .tile-stickers-wrap,
+.item-tile-catalog .tile-logo-wrap ~ .tile-stickers-wrap,
+.item-tile-catalog .tile-stickers-wrap ~ .tile-logo-wrap,
+.item-tile-catalog .tile-logo-wrap ~ .tile-logo-wrap {
+  display: none;
+}
+.item-tile-catalog .tile-logo-wrap {
+  padding: 15px;
+}
+.item-tile-catalog .tile-logo {
+  display: block;
+  position: relative;
+  width: 50%;
+  height: 20px;
+  margin: 0 0 0 auto;
+}
+.item-tile-catalog .tile-logo img,
+.item-tile-catalog .tile-logo svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 .item-tile-catalog .tile-photo-wrap {
   margin-bottom: 14px;
@@ -3154,7 +3182,8 @@ body {
 }
 .side-menu-box {
   margin-bottom: 50px;
-  font-size: 13px;
+  font-size: 15px;
+  font-weight: bold;
   line-height: 24px;
   color: #11112b;
 }
